@@ -32,7 +32,12 @@
     border-bottom: 1px solid var(--grey, #817671);
 
     justify-content: space-between;
+    cursor: pointer;
     // align-items: center;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   // .fag__drop-title

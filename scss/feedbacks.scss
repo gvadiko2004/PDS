@@ -3,6 +3,10 @@
   &__inner {
   }
 
+  @media (max-width: 440px) {
+    padding-bottom: 60px;
+  }
+
   // .feedbacks__top
 
   &__top {
