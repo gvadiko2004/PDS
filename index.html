@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/swiper-min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#!" class="header__logo">
+              <img src="./images/logo.svg" alt="PDS" />
+            </a>
+
+            <ul class="header__list list-reset">
+              <li class="header__list-item">
+                <a href="#!" class="header__list-link">About us</a>
+              </li>
+
+              <li class="header__list-item">
+                <a href="#!" class="header__list-link">Services</a>
+              </li>
+
+              <li class="header__list-item">
+                <a href="#!" class="header__list-link">Projects</a>
+              </li>
+            </ul>
+
+            <button class="btn-reset btn-open">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="24"
+                viewBox="0 0 28 24"
+                fill="none"
+              >
+                <path
+                  d="M23 21V24H5V21H23ZM27.5 10.5V13.5H0.5V10.5H27.5ZM23 0V3H5V0H23Z"
+                  fill="#292320"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu__mobile">
+        <div class="menu__top">
+          <img src="./images/logo.svg" alt="PDS" />
+
+          <button class="btn-reset btn-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+            >
+              <path
+                d="M9.6 28.5L7.5 26.4L15.9 18L7.5 9.6L9.6 7.5L18 15.9L26.4 7.5L28.5 9.6L20.1 18L28.5 26.4L26.4 28.5L18 20.1L9.6 28.5Z"
+                fill="#292320"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="menu__list list-reset">
+          <li class="menu__list-item">
+            <a href="#!" class="menu__list-link">About us</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#!" class="menu__list-link">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#!" class="menu__list-link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="menu__info list-reset">
+          <h3 class="menu__info-title">Contacts:</h3>
+
+          <li class="menu__info-item">
+            <a href="tel:+971524318330" class="menu__info-link">
+              Phone: +971524318330
+            </a>
+          </li>
+
+          <li class="menu__info-item">
+            <a
+              href="tel:projectdreamspaceuae@gmail.com"
+              class="menu__info-link"
+            >
+              E-mail: projectdreamspaceuae@gmail.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__social list-reset">
+          <li class="menu__social-item">
+            <a href="#!" class="menu__social-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M11.028 0C12.153 0.00299993 12.724 0.00899979 13.217 0.0229995L13.411 0.0299993C13.635 0.0379991 13.856 0.0479988 14.123 0.0599985C15.1869 0.109997 15.9129 0.277994 16.5499 0.524988C17.2099 0.778982 17.7659 1.12297 18.3219 1.67796C18.8304 2.17785 19.2238 2.78252 19.4748 3.44992C19.7218 4.0869 19.8898 4.81289 19.9398 5.87786C19.9518 6.14386 19.9618 6.36485 19.9698 6.58985L19.9758 6.78384C19.9908 7.27583 19.9968 7.84682 19.9988 8.97179L19.9998 9.71777V11.0277C20.0023 11.7571 19.9946 12.4865 19.9768 13.2157L19.9708 13.4097C19.9628 13.6347 19.9528 13.8557 19.9408 14.1217C19.8908 15.1866 19.7208 15.9116 19.4748 16.5496C19.2245 17.2174 18.831 17.8222 18.3219 18.3216C17.8218 18.8299 17.2172 19.2233 16.5499 19.4745C15.9129 19.7215 15.1869 19.8895 14.123 19.9395C13.8857 19.9507 13.6484 19.9607 13.411 19.9695L13.217 19.9755C12.724 19.9895 12.153 19.9965 11.028 19.9985L10.2821 19.9995H8.97309C8.24337 20.0021 7.51365 19.9944 6.78414 19.9765L6.59015 19.9705C6.35276 19.9615 6.11543 19.9512 5.87816 19.9395C4.81419 19.8895 4.08821 19.7215 3.45022 19.4745C2.78291 19.2239 2.17847 18.8304 1.67926 18.3216C1.17032 17.8219 0.776508 17.2172 0.52529 16.5496C0.278296 15.9126 0.1103 15.1866 0.0603009 14.1217C0.0491599 13.8844 0.0391601 13.6471 0.0303016 13.4097L0.0253018 13.2157C0.00687432 12.4865 -0.00145971 11.7571 0.000302329 11.0277V8.97179C-0.00248857 8.24241 0.00484537 7.51302 0.0223019 6.78384L0.0293017 6.58985C0.0373015 6.36485 0.0473012 6.14386 0.059301 5.87786C0.1093 4.81289 0.277296 4.0879 0.52429 3.44992C0.775398 2.78184 1.17 2.17697 1.68026 1.67796C2.17934 1.16945 2.78338 0.775969 3.45022 0.524988C4.08821 0.277994 4.81319 0.109997 5.87816 0.0599985C6.14416 0.0479988 6.36615 0.0379991 6.59015 0.0299993L6.78414 0.0239994C7.51332 0.00623256 8.24271 -0.00143466 8.97209 0.000999904L11.028 0ZM10.0001 4.99988C8.67402 4.99988 7.40228 5.52666 6.46462 6.46431C5.52696 7.40198 5.00019 8.67371 5.00019 9.99977C5.00019 11.3258 5.52696 12.5976 6.46462 13.5352C7.40228 14.4729 8.67402 14.9996 10.0001 14.9996C11.3261 14.9997 12.5979 14.4729 13.5355 13.5352C14.4732 12.5976 15 11.3258 15 9.99977C15 8.67371 14.4732 7.40198 13.5355 6.46431C12.5979 5.52666 11.3261 4.99988 10.0001 4.99988ZM10.0001 6.99984C10.394 6.99977 10.7841 7.0773 11.1481 7.228C11.5121 7.3787 11.8429 7.59962 12.1215 7.87814C12.4001 8.15666 12.6211 8.48734 12.772 8.85128C12.9228 9.21522 13.0004 9.60531 13.0005 9.99927C13.0006 10.3932 12.923 10.7833 12.7723 11.1473C12.6216 11.5113 12.4007 11.8421 12.1222 12.1207C11.8437 12.3993 11.513 12.6203 11.1491 12.7711C10.7851 12.922 10.395 12.9996 10.0011 12.9997C9.20544 12.9997 8.44239 12.6836 7.8798 12.121C7.3172 11.5584 7.00114 10.7954 7.00114 9.99977C7.00114 9.20414 7.3172 8.44109 7.8798 7.8785C8.44239 7.3159 9.20544 6.99984 10.0011 6.99984M15.2509 3.49992C14.9194 3.49992 14.6015 3.63161 14.3671 3.86603C14.1327 4.10044 14.001 4.41838 14.001 4.74989C14.001 5.0814 14.1327 5.39934 14.3671 5.63375C14.6015 5.86817 14.9194 5.99986 15.2509 5.99986C15.5825 5.99986 15.9004 5.86817 16.1348 5.63375C16.3692 5.39934 16.5009 5.0814 16.5009 4.74989C16.5009 4.41838 16.3692 4.10044 16.1348 3.86603C15.9004 3.63161 15.5825 3.49992 15.2509 3.49992Z"
+                  fill="#FFFDFB"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="menu__social-item">
+            <a href="#!" class="menu__social-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M20 10.0251C20 4.49123 15.52 0 10 0C4.48 0 0 4.49123 0 10.0251C0 14.8772 3.44 18.9173 8 19.8496V13.0326H6V10.0251H8V7.5188C8 5.58396 9.57 4.01003 11.5 4.01003H14V7.01754H12C11.45 7.01754 11 7.46867 11 8.02005V10.0251H14V13.0326H11V20C16.05 19.4987 20 15.2281 20 10.0251Z"
+                  fill="#FFFDFB"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <main class="main">
+        <section class="hero" style="background-image: url('./images/bg.jpg')">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__content">
+                <img
+                  src="./images/logo.png"
+                  class="hero__content-img"
+                  alt="PDS"
+                />
+
+                <h1 class="hero__content-title">PROJECT dream space</h1>
+                <p class="hero__content-subtitle">
+                  let your dreams set the standart
+                </p>
+                <p class="hero__content-muted">by angela conchie</p>
+
+                <button class="btn-reset button">
+                  <span>discuss the project</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.01257 18.7002L15.0126 12.7002L9.01257 6.7002"
+                      stroke="#FFFDFB"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="about__inner">
+              <h1 class="title about__title"><span>a</span>bout us</h1>
+
+              <div class="about__block">
+                <p class="about__block-text">
+                  Welcome to Project Dream Space, where our passion for
+                  ergonomic space management and interior design drives our
+                  journey. It all started with a small group of like-minded
+                  professionals who were determined to revolutionize old-school
+                  project management processes, making them more efficient from
+                  design concept creation to project completion. We pride
+                  ourselves on tailoring every aspect to meet each client's
+                  personalized needs, budget, and timeline. Our mission from the
+                  outset has been to craft not just beautiful spaces, but
+                  functional, comfortable, and enduring environments. Our
+                  unwavering commitment to perfection has earned us the trust of
+                  our clients, propelling us into a thriving studio with a
+                  wealth of experience. Join us in creating spaces that not only
+                  meet but exceed expectations, standing the test of time.
+                </p>
+
+                <div class="about__block-img">
+                  <img src="./images/c1.png" alt="PDS" />
+                </div>
+              </div>
+
+              <div class="about__block about__block--rewerse">
+                <p class="about__block-text">
+                  Welcome to Project Dream Space, where our passion for
+                  ergonomic space management and interior design drives our
+                  journey. It all started with a small group of like-minded
+                  professionals who were determined to revolutionize old-school
+                  project management processes, making them more efficient from
+                  design concept creation to project completion. We pride
+                  ourselves on tailoring every aspect to meet each client's
+                  personalized needs, budget, and timeline. Our mission from the
+                  outset has been to craft not just beautiful spaces, but
+                  functional, comfortable, and enduring environments. Our
+                  unwavering commitment to perfection has earned us the trust of
+                  our clients, propelling us into a thriving studio with a
+                  wealth of experience. Join us in creating spaces that not only
+                  meet but exceed expectations, standing the test of time.
+                </p>
+
+                <div class="about__block-img">
+                  <img src="./images/c3.png" alt="PDS" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team">
+          <div class="container">
+            <div class="team__inenr">
+              <h1 class="title team__title">our tea<span>m</span></h1>
+
+              <p class="subtitle team__subtitle">
+                Meet our team, comprised of professionals from diverse
+                backgrounds such as interior and product design, project
+                management, and vendor operations. Our common goal is to create
+                inspiring spaces. Each team member has substantial work
+                experience and is constantly exploring current trends, seeking
+                inspirational ideas, and devising innovative solutions. We
+                collaborate closely with our clients at every project stage to
+                incorporate their preferences and design interiors that
+                genuinely reflect their personalities
+              </p>
+
+              <div class="team__blocks">
+                <div class="column">
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/photo.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Angela Conchie</h3>
+                    <h3 class="team__blocks-manager">Managing Director</h3>
+
+                    <p class="team__blocks-subtitle">
+                      I have over a decade of experience in the UAE,
+                      specializing in interior design advisory and project
+                      implementation services. My expertise encompasses both
+                      residential and commercial projects. I have a strong
+                      background in managing turnkey projects, providing supply
+                      chain advisory, and overseeing project budgets and quality
+                      control. I have well established local and international
+                      partners enabling our team to provide our clients with
+                      exceptional results. My passion and vision drive me to
+                      provide our clients with the spaces that they dream.
+                    </p>
+                  </div>
+
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/photo-1.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Angela Conchie</h3>
+                    <h3 class="team__blocks-manager">Managing Director</h3>
+
+                    <p class="team__blocks-subtitle">
+                      My husband, my partner in life and business, implements
+                      and manages strategies that promote our organization's
+                      mission and vision.
+                    </p>
+                  </div>
+
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/photo-2.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Angela Conchie</h3>
+                    <h3 class="team__blocks-manager">Managing Director</h3>
+
+                    <p class="team__blocks-subtitle">
+                      Mr. Shahir has over a decade of experience in the UAE. He
+                      provides essential technical support for most of our
+                      capital projects, leveraging his engineering expertise in
+                      specification, design, and construction. He ensures that
+                      all projects align with specific requirements, industry
+                      standards, and regulatory codes.
+                    </p>
+                  </div>
+
+                  <div class="team__blocks-item team__blocks--item">
+                    <div class="team__blocks-img">
+                      <img src="./images/21.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Elias Al Hello</h3>
+                    <h3 class="team__blocks-manager">Senior Project Manager</h3>
+
+                    <p class="team__blocks-subtitle">
+                      Mr. Elias is a dynamic project leader with over two
+                      decades of experience in project coordination in the UAE.
+                      He leads meetings with our corporate and VIP clients,
+                      determines their programming and goals, resolves complex
+                      design and engineering challenges, and mentors his team
+                      while delegating tasks effectively.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column column-2">
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/21.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Elias Al Hello</h3>
+                    <h3 class="team__blocks-manager">Senior Project Manager</h3>
+
+                    <p class="team__blocks-subtitle">
+                      Mr. Elias is a dynamic project leader with over two
+                      decades of experience in project coordination in the UAE.
+                      He leads meetings with our corporate and VIP clients,
+                      determines their programming and goals, resolves complex
+                      design and engineering challenges, and mentors his team
+                      while delegating tasks effectively.
+                    </p>
+                  </div>
+
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/22.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Stepan Petrychkovych</h3>
+                    <h3 class="team__blocks-manager">Project Manager</h3>
+
+                    <p class="team__blocks-subtitle">
+                      For over eight years, Mr. Stepan has been transforming
+                      design visualizations into practical, ergonomic, and
+                      functional spaces and products. He believes that attention
+                      to detail is essential for creating comfortable living and
+                      working environments. Mr. Stepan is eager to work on your
+                      project, demonstrating his commitment to a personalized
+                      approach. He manages all client inquiries from Eastern
+                      Europe and Asia, conducting meetings and consultations
+                      online.
+                    </p>
+                  </div>
+
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/23.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Andrii Puchinin</h3>
+                    <h3 class="team__blocks-manager">
+                      Senior Architectural Designer
+                    </h3>
+
+                    <p class="team__blocks-subtitle">
+                      For Mr. Andrii, architecture and design are not just a
+                      profession but a passion that fuels his creativity. He
+                      begins by understanding his clients' visions, which allows
+                      him to create designs that meet their functional needs
+                      while reflecting their personal perspectives. Nature and
+                      sustainability have always been a source of inspiration
+                      for him. He believes that buildings should perform well
+                      while fitting organically into their surroundings. By
+                      utilizing natural materials and crafting spaces that
+                      harmonize with the environment, he creates structures that
+                      evoke aesthetic pleasure and foster a sense of comfort.
+                    </p>
+                  </div>
+
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/24.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Yulia Cherviachenko</h3>
+                    <h3 class="team__blocks-manager">Designer</h3>
+
+                    <p class="team__blocks-subtitle">
+                      Ms. Yulia is a highly professional interior designer and a
+                      talented CG artist. She transforms indoor spaces into
+                      functional, safe, and beautiful environments by assessing
+                      space requirements and selecting essential and decorative
+                      elements such as colors, lighting, and materials. Using
+                      the latest technology and 3D Max, she brings her designs
+                      to life through stunning 3D visualizations.
+                    </p>
+                  </div>
+
+                  <div class="team__blocks-item">
+                    <div class="team__blocks-img">
+                      <img src="./images/25.png" alt="PDS" />
+                    </div>
+
+                    <h3 class="team__blocks-title">Margaryta Logvinova</h3>
+                    <h3 class="team__blocks-manager">Designer</h3>
+
+                    <p class="team__blocks-subtitle">
+                      Ms. Margaryta is a highly professional interior designer
+                      with a profound passion for her craft. She takes pride in
+                      creating spaces that are comfortable, functional, and
+                      visually appealing. By drawing on inspiration and
+                      employing a detailed approach, she strives to make complex
+                      designs look effortless and inviting.
+                    </p>
+                  </div>
+                </div>
+
+                <button class="btn-reset btn-open-users button-drop">
+                  <span>less</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.5 15L12.5 9L6.5 15"
+                      stroke="#292320"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="setvice">
+          <div class="container">
+            <div class="setvice__inner">
+              <h1 class="title setvice__title"><span>s</span>ervices</h1>
+
+              <div class="setvice__blocks">
+                <div class="setvice__blocks-item">
+                  <div class="setvice__blocks-img">
+                    <img src="./images/32.png" alt="PDS" />
+                  </div>
+                  <h2 class="setvice__blocks-title">Interior Design</h2>
+                </div>
+
+                <div class="setvice__blocks-item">
+                  <div class="setvice__blocks-img">
+                    <img src="./images/31.png" alt="PDS" />
+                  </div>
+                  <h2 class="setvice__blocks-title">Turnkey Service</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects">
+          <div class="container">
+            <div class="projects__inner">
+              <h1 class="title projects__title"><span>s</span>ervices</h1>
+
+              <div class="projects__tabs">
+                <button
+                  class="btn-reset btn-residential projects__tabs-btn active"
+                >
+                  Residential
+                </button>
+
+                <button class="btn-reset btn-rommercial projects__tabs-btn">
+                  Commercial
+                </button>
+              </div>
+
+              <div class="projects__blocks">
+                <div class="projects__blocks-item">
+                  <div class="projects__blocks-img">
+                    <img src="./images/32.png" alt="PDS" />
+                  </div>
+                  <h2 class="projects__blocks-title">Interior Design</h2>
+                </div>
+
+                <div class="projects__blocks-item">
+                  <div class="projects__blocks-img">
+                    <img src="./images/31.png" alt="PDS" />
+                  </div>
+                  <h2 class="projects__blocks-title">Turnkey Service</h2>
+                </div>
+              </div>
+
+              <div class="projects__blocks projects__blocks--2">
+                <div class="projects__blocks-item">
+                  <div class="projects__blocks-img">
+                    <img src="./images/232.png" alt="PDS" />
+                  </div>
+                  <h2 class="projects__blocks-title">
+                    Retail Clothing Store (2024)
+                  </h2>
+                </div>
+              </div>
+
+              <button class="btn-reset button button__projects">
+                <span>see all</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M9.01257 18.7002L15.0126 12.7002L9.01257 6.7002"
+                    stroke="#FFFDFB"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="fag">
+          <div class="container">
+            <div class="fag__inner">
+              <h1 class="title fag__title">FA<span>Q</span></h1>
+
+              <div class="fag__drop">
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      What range of services do you offer
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      We offer a wide range of design and construction support
+                      services, including developing design projects, creating
+                      visualizations, providing author supervision, project
+                      management, and full implementation. Our services
+                      encompass both residential and commercial properties.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      What makes the process of working with you stand out?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      Our process includes several stages, from the initial
+                      consultation and discussion of your concept creation
+                      wishes to visualization, preparation for implementation,
+                      and project management. Each stage is designed to maximize
+                      comfort for our customers.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      How long does a project take?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      The time it takes to complete a project depends on its
+                      scope and complexity. It can usually take anywhere from a
+                      few weeks to several months. We always provide our clients
+                      with an estimated timeline at the beginning of the
+                      project.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      Is it possible to make adjustments to the project while
+                      it's in progress?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      Yes, we are open to making changes at any stage of the
+                      work. Please discuss all changes with our project manager
+                      to assess their impact on timelines and budget.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      How do you craft the project budget to ensure success?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      The project budget is determined based on your
+                      preferences, the size of the site, and chosen materials.
+                      We always strive to provide optimal solutions that ensure
+                      quality and functionality while fitting your budget.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      Do you collaborate with contractors of your choice, or can
+                      I choose my own?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      We have established relationships with reliable
+                      contractors to ensure high- quality work. However, if you
+                      prefer to work with your own contractor, we are open to
+                      considering collaboration with them.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      What materials do you use in your projects?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      We only use high - quality materials that meet
+                      international standards. Our experts can advise you on the
+                      best options for your project, considering your aesthetics
+                      and functionality requirements.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      Do you offer design supervision during the project
+                      implementation process?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      We offer project design supervision as an additional
+                      service to ensure strict implementation of the approved
+                      design visualization. Our specialists continuously monitor
+                      the process and are ready to resolve any issues during the
+                      design project implementation.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      What is your policy regarding design changes after they
+                      have been approved?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      If you decide to make changes after design approval, we're
+                      ready to consider your wishes. However, changes can affect
+                      the timeline and budget, so it is important to discuss all
+                      the details with our project manager.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fag__drop-item">
+                  <div class="start">
+                    <h4 class="fag__drop-title">
+                      Is there a warranty for the work that has been done?
+                    </h4>
+                  </div>
+
+                  <div class="end">
+                    <p class="fag__drop-subtitle active">
+                      Yes, we offer a guarantee for all materials used in our
+                      designs. Our goal is to ensure complete customer
+                      satisfaction and address any concerns after the project is
+                      completed.
+                    </p>
+
+                    <div class="icon-fag">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="35"
+                          height="35"
+                          stroke="#817671"
+                        />
+                        <path
+                          d="M21 25.5L13.5 18L21 10.5"
+                          stroke="#817671"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feedbacks">
+          <div class="container">
+            <div class="feedbacks__inner">
+              <div class="feedbacks__top">
+                <h1 class="feedbacks__title title">fee<span>d</span>backs</h1>
+
+                <a href="#!" class="btn-reset button">
+                  <span>leave a feedback</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.01257 18.7002L15.0126 12.7002L9.01257 6.7002"
+                      stroke="#FFFDFB"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="feedbacks__content">
+                <div class="feedbacks__content-img">
+                  <img src="./images/011 1.png" alt="" />
+                </div>
+
+                <div class="swiper swiper-feedbacks">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="feedbacks__testimonials">
+                        <h3 class="feedbacks__testimonials-title">
+                          An incredible team of professionals
+                        </h3>
+                        <p class="feedbacks__testimonials-subtitle">
+                          PDS is a team of true professionals. They helped us
+                          create an office that not only looks stylish, but is
+                          also functional and comfortable for the whole team.
+                          Working with them was easy and pleasant: they
+                          carefully listened to our wishes and offered
+                          innovative solutions that we could not even imagine.
+                          We are very pleased with the result and will
+                          definitely be using them in the future for new
+                          projects.
+                        </p>
+                        <p class="feedbacks__testimonials-name">John J.</p>
+
+                        <ul class="list-reset">
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="feedbacks__testimonials">
+                        <h3 class="feedbacks__testimonials-title">
+                          An incredible team of professionals
+                        </h3>
+                        <p class="feedbacks__testimonials-subtitle">2</p>
+                        <p class="feedbacks__testimonials-name">John J.</p>
+
+                        <ul class="list-reset">
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="feedbacks__testimonials">
+                        <h3 class="feedbacks__testimonials-title">
+                          An incredible team of professionals
+                        </h3>
+                        <p class="feedbacks__testimonials-subtitle">3</p>
+                        <p class="feedbacks__testimonials-name">John J.</p>
+
+                        <ul class="list-reset">
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="26"
+                              height="24"
+                              viewBox="0 0 26 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M12.7347 0.502901C12.8472 0.289557 13.1528 0.289558 13.2653 0.502902L16.9046 7.40058C16.948 7.48285 17.0271 7.54034 17.1188 7.55619L24.8035 8.88584C25.0411 8.92696 25.1356 9.21755 24.9674 9.39053L19.532 14.9832C19.4671 15.0499 19.4369 15.1429 19.4501 15.235L20.5603 22.9544C20.5946 23.1932 20.3474 23.3728 20.131 23.2663L13.1324 19.8251C13.0489 19.784 12.9511 19.784 12.8676 19.8251L5.86905 23.2663C5.65258 23.3728 5.40539 23.1932 5.43973 22.9544L6.54986 15.235C6.5631 15.1429 6.53288 15.0499 6.46805 14.9832L1.03256 9.39053C0.864442 9.21755 0.958861 8.92696 1.19655 8.88584L8.88122 7.55619C8.97288 7.54034 9.052 7.48285 9.09541 7.40058L12.7347 0.502901Z"
+                                fill="#A58A7B"
+                              />
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btns-swiper">
+                  <button class="btn-reset btns-swiper-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <rect x="0.5" y="0.5" width="31" height="31" stroke="#817671"/>
+                      <path d="M18.6667 22.6668L12 16.0002L18.6667 9.3335" stroke="#817671" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+
+                  <button class="btn-reset btns-swiper-next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="31"
+                        height="31"
+                        stroke="#292320"
+                      />
+                      <path
+                        d="M14.6667 22.6666L21.3334 15.9999L14.6667 9.33325"
+                        stroke="#292320"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__start">
+              <ul class="footer__list list-reset">
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">About us</a>
+                </li>
+
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Services</a>
+                </li>
+
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Projects</a>
+                </li>
+              </ul>
+
+              <ul class="footer__info list-reset">
+                <li class="footer__info-item">
+                  <a href="tel:+971524318330" class="footer__info-link">
+                    Phone: +971524318330</a
+                  >
+                </li>
+
+                <li class="footer__info-item">
+                  <a
+                    href="mailto:projectdreamspaceuae@gmail.com"
+                    class="footer__info-link"
+                  >
+                    E-mail: projectdreamspaceuae@gmail.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="footer__social list-reset">
+                <li class="footer__social-item">
+                  <a href="#!" class="footer__social-link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.028 0C12.153 0.00299993 12.724 0.00899979 13.217 0.0229995L13.411 0.0299993C13.635 0.0379991 13.8559 0.0479988 14.1229 0.0599985C15.1869 0.109997 15.9129 0.277994 16.5499 0.524988C17.2099 0.778982 17.7659 1.12297 18.3218 1.67796C18.8303 2.17785 19.2238 2.78252 19.4748 3.44992C19.7218 4.0869 19.8898 4.81289 19.9398 5.87786C19.9518 6.14386 19.9618 6.36485 19.9698 6.58985L19.9758 6.78384C19.9908 7.27583 19.9968 7.84682 19.9988 8.97179L19.9998 9.71777V11.0277C20.0023 11.7571 19.9946 12.4865 19.9768 13.2157L19.9708 13.4097C19.9628 13.6347 19.9528 13.8557 19.9408 14.1217C19.8908 15.1866 19.7208 15.9116 19.4748 16.5496C19.2245 17.2174 18.831 17.8222 18.3218 18.3216C17.8218 18.8299 17.2172 19.2233 16.5499 19.4745C15.9129 19.7215 15.1869 19.8895 14.1229 19.9395C13.8857 19.9507 13.6483 19.9607 13.411 19.9695L13.217 19.9755C12.724 19.9895 12.153 19.9965 11.028 19.9985L10.282 19.9995H8.97306C8.24334 20.0021 7.51362 19.9944 6.78411 19.9765L6.59012 19.9705C6.35273 19.9615 6.1154 19.9512 5.87813 19.9395C4.81416 19.8895 4.08818 19.7215 3.45019 19.4745C2.78288 19.2239 2.17844 18.8304 1.67923 18.3216C1.17029 17.8219 0.776478 17.2172 0.52526 16.5496C0.278265 15.9126 0.110269 15.1866 0.0602704 14.1217C0.0491294 13.8844 0.0391296 13.6471 0.0302711 13.4097L0.0252713 13.2157C0.0068438 12.4865 -0.00149023 11.7571 0.000271811 11.0277V8.97179C-0.00251909 8.24241 0.00481485 7.51302 0.0222714 6.78384L0.0292712 6.58985C0.037271 6.36485 0.0472707 6.14386 0.0592704 5.87786C0.109269 4.81289 0.277265 4.0879 0.524259 3.44992C0.775368 2.78184 1.16996 2.17697 1.68023 1.67796C2.17931 1.16945 2.78335 0.775969 3.45019 0.524988C4.08818 0.277994 4.81316 0.109997 5.87813 0.0599985C6.14413 0.0479988 6.36612 0.0379991 6.59012 0.0299993L6.78411 0.0239994C7.51329 0.00623256 8.24267 -0.00143466 8.97206 0.000999904L11.028 0ZM10 4.99988C8.67399 4.99988 7.40225 5.52666 6.46459 6.46431C5.52693 7.40198 5.00015 8.67371 5.00015 9.99977C5.00015 11.3258 5.52693 12.5976 6.46459 13.5352C7.40225 14.4729 8.67399 14.9996 10 14.9996C11.3261 14.9997 12.5978 14.4729 13.5355 13.5352C14.4731 12.5976 14.9999 11.3258 14.9999 9.99977C14.9999 8.67371 14.4731 7.40198 13.5355 6.46431C12.5978 5.52666 11.3261 4.99988 10 4.99988ZM10 6.99984C10.394 6.99977 10.7841 7.0773 11.1481 7.228C11.5121 7.3787 11.8428 7.59962 12.1215 7.87814C12.4001 8.15666 12.6211 8.48734 12.7719 8.85128C12.9227 9.21522 13.0004 9.60531 13.0005 9.99927C13.0005 10.3932 12.923 10.7833 12.7723 11.1473C12.6216 11.5113 12.4007 11.8421 12.1222 12.1207C11.8436 12.3993 11.513 12.6203 11.149 12.7711C10.7851 12.922 10.395 12.9996 10.001 12.9997C9.20541 12.9997 8.44236 12.6836 7.87977 12.121C7.31717 11.5584 7.00111 10.7954 7.00111 9.99977C7.00111 9.20414 7.31717 8.44109 7.87977 7.8785C8.44236 7.3159 9.20541 6.99984 10.001 6.99984M15.2509 3.49992C14.9194 3.49992 14.6015 3.63161 14.3671 3.86603C14.1326 4.10044 14.0009 4.41838 14.0009 4.74989C14.0009 5.0814 14.1326 5.39934 14.3671 5.63375C14.6015 5.86817 14.9194 5.99986 15.2509 5.99986C15.5824 5.99986 15.9004 5.86817 16.1348 5.63375C16.3692 5.39934 16.5009 5.0814 16.5009 4.74989C16.5009 4.41838 16.3692 4.10044 16.1348 3.86603C15.9004 3.63161 15.5824 3.49992 15.2509 3.49992Z"
+                        fill="#A58A7B"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#!" class="footer__social-link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M20 10.0251C20 4.49123 15.52 0 10 0C4.48 0 0 4.49123 0 10.0251C0 14.8772 3.44 18.9173 8 19.8496V13.0326H6V10.0251H8V7.5188C8 5.58396 9.57 4.01003 11.5 4.01003H14V7.01754H12C11.45 7.01754 11 7.46867 11 8.02005V10.0251H14V13.0326H11V20C16.05 19.4987 20 15.2281 20 10.0251Z"
+                        fill="#A58A7B"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <p class="footer__copyright">2024 © PDS. All rights reserved</p>
+            </div>
+
+            <div class="footer__end">
+              <img src="./images/logo.png" alt="PDS" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper-min.js"></script>
+  </body>
+</html>

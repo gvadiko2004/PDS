@@ -1,0 +1,79 @@
+.fag {
+  // .fag__inner
+
+  .end {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  &__inner {
+  }
+
+  // .fag__title
+
+  &__title {
+  }
+
+  // .fag__drop
+
+  &__drop {
+  }
+
+  // .fag__drop-item
+
+  &__drop-item {
+    display: flex;
+    padding: 20px 0px;
+    align-items: flex-start;
+    gap: 60px;
+    align-self: stretch;
+    border-top: 1px solid var(--grey, #817671);
+    border-bottom: 1px solid var(--grey, #817671);
+
+    justify-content: space-between;
+    // align-items: center;
+  }
+
+  // .fag__drop-title
+
+  &__drop-title {
+    color: var(--brown, #a58a7b);
+    max-width: 670px;
+
+    /* desktop/subtitle2 */
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 110% */
+    letter-spacing: 0.8px;
+  }
+
+  // .fag__drop-subtitle
+
+  &__drop-subtitle {
+    max-width: 441px;
+    color: var(--grey, #817671);
+
+    /* desktop/body */
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.icon-fag {
+  &.active {
+    transform: rotate(180deg);
+  }
+}

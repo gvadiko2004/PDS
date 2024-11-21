@@ -1,0 +1,50 @@
+.about {
+  // .about__inner
+  padding-bottom: 6px;
+
+  &__inner {
+  }
+
+  // .about__title
+
+  &__title {
+  }
+
+  // .about__block
+
+  &__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+
+    margin-bottom: 60px;
+
+    &--rewerse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  // .about__block-text
+
+  &__block-text {
+    max-width: 628px;
+
+    color: var(--text, #292320);
+
+    /* desktop/body */
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+  }
+
+  // .about__block-img
+
+  &__block-img {
+    max-width: 522px;
+    overflow: hidden;
+  }
+}

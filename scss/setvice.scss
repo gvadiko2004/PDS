@@ -1,0 +1,47 @@
+.setvice {
+  // .setvice__inner
+  padding-bottom: 60px;
+
+  &__inner {
+  }
+
+  // .setvice__title
+
+  &__title {
+  }
+
+  // .setvice__blocks
+
+  &__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  // .setvice__blocks-item
+
+  &__blocks-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  // .setvice__blocks-img
+
+  &__blocks-img {
+  }
+
+  // .setvice__blocks-title
+
+  &__blocks-title {
+    color: var(--text, #292320);
+
+    /* desktop/subtitle2 */
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 110% */
+    letter-spacing: 0.8px;
+  }
+}

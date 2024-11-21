@@ -1,0 +1,124 @@
+.feedbacks {
+  // .feedbacks__inner
+  &__inner {
+  }
+
+  // .feedbacks__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+      max-width: max-content;
+      max-height: max-content;
+    }
+  }
+
+  // .feedbacks__title
+
+  &__title {
+  }
+
+  // .feedbacks__content
+
+  &__content {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 102px 0 0 0;
+    gap: 121px;
+  }
+
+  // .feedbacks__content-img
+
+  &__content-img {
+  }
+
+  // .feedbacks__testimonials
+
+  &__testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+  }
+
+  // .feedbacks__testimonials-title
+
+  &__testimonials-title {
+    color: var(--text, #292320);
+
+    /* desktop/subtitle1 */
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 91.667% */
+    letter-spacing: 0.96px;
+  }
+
+  // .feedbacks__testimonials-subtitle
+
+  &__testimonials-subtitle {
+    color: var(--grey, #817671);
+
+    /* desktop/body */
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+  }
+
+  // .feedbacks__testimonials-name
+
+  &__testimonials-name {
+    color: var(--text, #292320);
+
+    /* desktop/subtitle2 */
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 110% */
+    letter-spacing: 0.8px;
+  }
+}
+
+.button {
+  // .button__projects
+
+  &__projects {
+  }
+}
+
+.swiper-feedbacks {
+  width: 100%;
+  max-width: 522px;
+
+  * {
+    transition: none;
+  }
+}
+
+.btns-swiper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  top: -53px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.feedbacks__title {
+  margin: 86px 0 46px 0;
+}
