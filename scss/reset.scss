@@ -271,3 +271,40 @@ a {
   max-width: 522px;
   margin-bottom: 62px;
 }
+
+.breadcrumps__list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 189px 0 0 0;
+
+  position: relative;
+  z-index: 2;
+  li {
+    color: var(--white, #fffdfb);
+
+    /* desktop/body */
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+  }
+
+  a {
+    color: var(--white, #fffdfb);
+
+    /* desktop/body */
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
