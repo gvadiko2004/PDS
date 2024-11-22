@@ -24,10 +24,9 @@
     left: 100%;
 
     transition: 0.6s ease-in-out;
-    opacity: 0.6;
+    z-index: 1111;
 
     &.active {
-      opacity: 1;
       left: 0;
     }
   }

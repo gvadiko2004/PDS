@@ -23,11 +23,7 @@
   // .fag__drop-item
 
   &__drop-item {
-    display: flex;
     padding: 20px 0px;
-    align-items: flex-start;
-    gap: 60px;
-    align-self: stretch;
     border-top: 1px solid var(--grey, #817671);
     border-bottom: 1px solid var(--grey, #817671);
 
@@ -37,6 +33,23 @@
 
     &:hover {
       opacity: 0.6;
+    }
+
+    display: grid;
+    grid-template-columns: 50% 42%;
+
+    @media (max-width: 1080px) {
+      gap: 8px;
+      grid-template-columns: 45% 47%;
+    }
+
+    @media (max-width: 640px) {
+      gap: 8px;
+      grid-template-columns: 39% 56%;
+    }
+
+    @media (max-width: 440px) {
+      grid-template-columns: 34% 60% !important;
     }
   }
 
@@ -78,6 +91,7 @@
 }
 
 .icon-fag {
+  margin-left: auto;
   &.active {
     transform: rotate(180deg);
   }

@@ -1,0 +1,37 @@
+.example {
+  // .example__inner
+  padding-bottom: 80px;
+
+  @media (max-width: 769px) {
+    padding-bottom: 60px;
+  }
+
+  button {
+    margin: 12px 0 0 0;
+  }
+
+  &__inner {
+  }
+
+  .title {
+    @media (max-width: 440px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.swiper-slide-example {
+  overflow: hidden !important;
+  width: max-content;
+  height: max-content;
+
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.swiper-example {
+  width: 100%;
+  max-height: 553px;
+  overflow: visible !important;
+}

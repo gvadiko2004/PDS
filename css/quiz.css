@@ -1,0 +1,7 @@
+.quiz__question {
+  display: none;
+}
+
+.quiz__question:first-child {
+  display: block;
+}

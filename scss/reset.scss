@@ -227,8 +227,8 @@ a {
 
   .checkbox-custom {
     display: block;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     border: 2px solid #000;
     border-radius: 50%;
     position: relative;
@@ -280,6 +280,9 @@ a {
 
   position: relative;
   z-index: 2;
+  @media (max-width: 768px) {
+    padding: 85px 0 0 0;
+  }
   li {
     color: var(--white, #fffdfb);
 
@@ -306,5 +309,34 @@ a {
     &:hover {
       opacity: 0.6;
     }
+  }
+}
+
+label {
+  max-width: max-content;
+}
+
+.button-white {
+  background: #fff !important;
+
+  color: var(--text, #292320);
+
+  /* desktop/button */
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  display: inline-flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--white, #fffdfb);
+
+  &:hover {
+    opacity: 0.9;
   }
 }
