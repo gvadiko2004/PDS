@@ -45,18 +45,8 @@
     letter-spacing: 0.32px;
     position: relative;
 
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      bottom: -6px;
-      width: 0;
-      height: 1px;
-      background-color: #292320;
-    }
-
-    &:hover::before {
-      width: 40%;
+    &:hover {
+      opacity: 0.6;
     }
   }
 }

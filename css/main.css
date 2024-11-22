@@ -1328,17 +1328,8 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.32px;
   position: relative;
 }
-.header__list-link::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 1px;
-  background-color: #292320;
-}
-.header__list-link:hover::before {
-  width: 40%;
+.header__list-link:hover {
+  opacity: 0.6;
 }
 
 .btn-open {
